@@ -11,7 +11,7 @@ import Breadcrumb from '../../components/Breadcrumbs/Breadcrumb';
 
 const SignIn: React.FC = () => {
   const navigate = useNavigate();
-  const { login: authenticate, setIsAuthenticated } = useAuth();
+  const { setIsAuthenticated } = useAuth();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
